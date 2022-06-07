@@ -12,6 +12,8 @@ $cat = $req_getCategories->fetchAll(PDO::FETCH_ASSOC);
 
 /*print_r($cat);*/
 
+
+
 // Réaliser une requête qui permet d'afficher le nombre de films par catégories
 
 $film_cat = $db->prepare("SELECT categories.category, COUNT(infos_movies_id) FROM categories_has_infos_movies
